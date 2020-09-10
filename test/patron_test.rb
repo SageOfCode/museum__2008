@@ -10,7 +10,7 @@ class PatronTest < Minitest::Test
     assert_equal 20, patron_1.spending_money
   end
 
-  def test_it_knows_spending_money
+  def test_it_knows_interests
     patron_1 = Patron.new("Bob", 20)
     assert_equal [], patron_1.interests
     patron_1.add_interest("Dead Sea Scrolls")
