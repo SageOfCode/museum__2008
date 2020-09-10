@@ -3,6 +3,7 @@ class Museum
   def initialize(name)
     @name = name
     @exhibits = []
+    @patrons = []
   end
 
   def exhibits
@@ -23,5 +24,13 @@ class Museum
       end
     end
     interest_list.reverse
+  end
+
+  def admit(patron)
+    @patrons << patron 
+  end
+
+  def patrons
+    @patrons
   end
 end
